@@ -13,3 +13,5 @@ while not rospy.is_shutdown():
    except:
       try:
          usb = scale.USB()
+      except:
+         r.sleep()
