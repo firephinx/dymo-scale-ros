@@ -16,12 +16,7 @@ while not rospy.is_shutdown():
     else:
         try:
             weight=usb.get_weight_grams()
-            print(weight)
             pub.publish(weight)
             r.sleep()
         except:
             usb = None
- #     try:
- #        usb = scale.USB()
- #     except:
- #        r.sleep()
