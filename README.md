@@ -14,6 +14,7 @@ SUBSYSTEM=="usb", ATTR{idVendor}=="0922", ATTR{idProduct}=="8003", MODE="666"
 ```
 pip install python-dymo-scale
 ```
+4. Copy the scale.py file in scripts to where dymo is installed.
 
 ## Running
 ```
