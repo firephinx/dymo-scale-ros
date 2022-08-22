@@ -1,4 +1,4 @@
-from dymo import scale
+import scale
 import rospy
 from std_msgs.msg import Int32
 
