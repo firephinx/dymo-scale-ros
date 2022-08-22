@@ -10,11 +10,7 @@ sudo apt-get install python libusb-1.0-0
 ```
 SUBSYSTEM=="usb", ATTR{idVendor}=="0922", ATTR{idProduct}=="8003", MODE="666"
 ```
-3. Install python-dymo-scale
-```
-pip install python-dymo-scale
-```
-4. Copy the scale.py file in scripts to where dymo is installed.
+3. Unplug and replug the Dymo Scale from the computer. Then turn on the scale.
 
 ## Running
 ```
