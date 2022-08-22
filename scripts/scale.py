@@ -20,5 +20,8 @@ class USB(object):
     def get_weight_grams(self):
         data = self.device.read(self.endpoint.bEndpointAddress,
                                 self.endpoint.wMaxPacketSize)
-        grams = data[4] + (256 * data[5])
+        if data[1] == 5:
+            grams = -data[4] - (256 * data[5])
+        else:
+            grams = data[4] + (256 * data[5])
         return grams
